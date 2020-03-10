@@ -1,0 +1,23 @@
+create database seller;
+use test;
+use project4;
+use project5;
+use seller;
+select * from  transaction;
+select * from  item;
+select * from  shoppingcart;
+create table emp(eid bigint,ename varchar(50));
+insert into emp values(12,"Mahesh","hyderabad");
+alter table emp add column edeptid int default 1  after edept;
+select * from purchasehistory;
+select * from shoppingcart;
+select * from seller;
+select * from transaction;
+select * from sub_category_entity;
+insert into sub_category_entity values(1,"hello","jeans",3);
+insert into item values(7,2,1234,'high end Model','blackberryplus','blackberry','22',123,3,1);
+
+SELECT * FROM project4.transaction;
+use project4;
+alter table transaction add column totalprice float;
+ALTER TABLE transaction DROP totalprice;
