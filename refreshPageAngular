@@ -1,0 +1,7 @@
+
+
+This can be achieved via a hack, Navigate to some sample component and then navigate to the component that you want to reload.
+
+this.router.navigateByUrl('/SampleComponent', { skipLocationChange: true });
+this.router.navigate(["yourLandingComponent"]);
+
